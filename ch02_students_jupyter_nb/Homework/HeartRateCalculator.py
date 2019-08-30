@@ -13,14 +13,15 @@ before beginning or modifying an exercise program.]
 """
 
 # Will and I wanted to see who could do it in the least amount of lines
-user_age = int(input("What is your Age\t"))
+user_age = int(input("What is your Age\t")) # Take the age and auto cast it to an integer
 print("\n\nUser Age: {age}\nMax Heart Rate: {max}\n\tLow Range:\t{low}\n\tHigh Range:\t{high}".format(age=user_age, max=(220-user_age), low=round(((220-user_age) * .50),2), high=round(((220-user_age) *.85))))
 
-
+# The max BBM is 220 - age
 user_maxBBM = 220 - user_age
-healthy_max = user_maxBBM * .85
-healthy_min = user_maxBBM * .5
+healthy_max = user_maxBBM * .85 # The 85%
+healthy_min = user_maxBBM * .5  # The low 50%
 
+# Pretty formated print statment
 print(
     """
     User Age:\t\t{age}
