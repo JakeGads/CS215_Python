@@ -11,5 +11,26 @@ heart rate and the range of the user’s target heart rate.
 fitness and gender of the individual. Always consult a physician or qualified healthcare professional 
 before beginning or modifying an exercise program.]
 """
+
+# Will and I wanted to see who could do it in the least amount of lines
 user_age = int(input("What is your Age\t"))
-print("\n\nUser Age: {age}\nMax Heart Rate: {max}\n\tLow Range: {low}\n\t{high}".format(age=user_age, max=220-user_age, low=max*.50, high=max*.85))
+print("\n\nUser Age: {age}\nMax Heart Rate: {max}\n\tLow Range:\t{low}\n\tHigh Range:\t{high}".format(age=user_age, max=(220-user_age), low=round(((220-user_age) * .50),2), high=round(((220-user_age) *.85))))
+
+
+user_maxBBM = 220 - user_age
+healthy_max = user_maxBBM * .85
+healthy_min = user_maxBBM * .5
+
+print(
+    """
+    User Age:\t\t{age}
+    Max Heart Rate:\t{max} BBM
+    \tLow Range:\t{low} BBM
+    \tHigh Range:\t{high} BBM
+    """.format(
+        age = user_age,
+        max = user_maxBBM,
+        low = round(healthy_min,2),
+        high = round(healthy_max,2),
+    )
+)
