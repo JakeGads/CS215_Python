@@ -43,6 +43,11 @@ def squares_and_cubes():
         print("{number}\t{square}\t{cube}".format(number=i,square=i**2, cube=i**3))
 
 if __name__ == "__main__":
-    #circle()
-    #parity()
+    circle()
+    parity()
     squares_and_cubes()
+    
+for i in range(1, 72):
+    if 72/i == 72//i:
+        print(i, 72/i)
+        
