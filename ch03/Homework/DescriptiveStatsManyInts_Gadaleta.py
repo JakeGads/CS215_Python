@@ -12,10 +12,14 @@ Name your file DescriptiveStatsManyInts_YourName.py.
 Of course, points will be taken off if the usual conventions are not followed.
 
 """
+# take the input
 temp = input('Give me #1\t')
+
+# if its the sentinal force an exit
 if temp == 'z':
     exit()
 
+# Does the intial count
 temp = int(temp)
 counter = 1
 mySum = temp
@@ -25,14 +29,19 @@ smallest = temp
 largest = temp
 
 while temp != 'z':
+    # add to the counter
     counter += 1
-    temp = input('Give me #{counter}\t'.format(counter=counter))
+    # recive next import
+    temp = input('Give me #{counter} or enter \'z\' to exit\t'.format(counter=counter))
 
+    # check if the sential was called and if it is leave it behind
     if temp == 'z':
         break
 
+    # cast to int
     temp = int(temp)
 
+    # do all of my calculations and checks the largest and smallest
     mySum += temp
     average = mySum/counter
     product*=temp
@@ -43,6 +52,8 @@ while temp != 'z':
     if temp < smallest:
         smallest = temp
 
+
+# Report Statments
 print(
     """
     Counter:\t{counter} 
