@@ -1,4 +1,12 @@
 """
+FewestCoins_Gadaleta
+
+This file contains the code for question 3.21
+
+@author Jake Gadaleta
+"""
+
+"""
 3.21 (Calculate Change Using Fewest Number of Coins) 
 Write a script that inputs a purchase price of a dollar or less for an item. Assume the purchaser pays with a dollar bill. 
 Determine the amount of change the cashier should give back to the purchaser. 

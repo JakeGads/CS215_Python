@@ -1,4 +1,12 @@
 """
+Palindromes_Gadaleta
+
+This file contains the code for question 3.12 with edits from dr ryan
+
+@author Jake Gadaleta
+"""
+
+"""
 3.12 (Palindromes) A palindrome is a number, word or text phrase 
 that reads the same backwards or forwards. 
 For example, each of the following five-digit integers is a 
