@@ -3,8 +3,9 @@ LearningFunctions.py
 Lab 4A: writing several basic functions
 @author
 """
-'Determins a letter grade for any given score'
+
 def findLetterGrade(score):
+    """Determins a letter grade for any given score"""
     if score < 60: # if they score below a 60 they get an F
         return 'F'
     elif  score < 70: # if they score below a 70 but greater then a 60 they get an D
@@ -16,8 +17,9 @@ def findLetterGrade(score):
     else: # if they score a 90 or above they get an A
         return 'A'
 
-# calculates how much money was made on the sale of every type of seat
+
 def calculateStadiumSales(a,b,c):
+    """calculates how much money was made on the sale of every type of seat"""
     a_cost = 20 # values for each type of seat
     b_cost = 15
     c_cost = 10

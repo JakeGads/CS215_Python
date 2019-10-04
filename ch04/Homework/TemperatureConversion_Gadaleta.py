@@ -16,8 +16,8 @@ Use this function to print a chart showing the Fahrenheit equivalents of all Cel
 Use one digit of precision for the results. Print the outputs in a neat tabular format
 '''
 
-# takes in a Celsius temperature and converts it Fahrenheit
 def convert_temp(c):
+    """takes in a Celsius temperature and converts it Fahrenheit"""
     return (9/5) * c + 32 # uses the provided formula
 
 if __name__ == "__main__":
