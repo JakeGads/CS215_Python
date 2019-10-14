@@ -1,0 +1,16 @@
+What we need
+    Draw the box,
+    Handle Random needs for each animal
+
+
+Draw box
+    for loop to 70
+    inside the loop have markers for where to put H and T
+    Handle when they crash
+        OUCH!!! and consume that
+
+Calculating Animals
+    gen random number 0 - 10 match with percentages
+
+(FOR JAKE: output results to a txt file)
+    

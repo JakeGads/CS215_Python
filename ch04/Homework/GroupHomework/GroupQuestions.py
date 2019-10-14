@@ -20,17 +20,27 @@ def clearScreen():
 
     call(clear, shell=True)
 
-def drawBox(animal, score, size=70):
-    """This will print one line with the animals current location on it"""
-    string = '['
-    for i in range(size):
-        if score is i:
-            string += animal
+def drawBox(t_score, h_score):
+    """Draws the actual box"""
+    print("[", end="")
+
+    for i in range(70):
+        if i == t_score == h_score:
+            print("Ouch!!!", end="")
+            for i in range(70 - i - len("Ouch!!!")):
+                print("-", end="")
+            break
+            
+        elif i == t_score:
+            print('T', end="")
+
+        elif i == h_score:
+            print("H", end="")
+
         else:
-            string += '-'
-    string += ']'
-    return string
-    
+            print("-", end="")
+
+    print("]", end="")
 
 
 
@@ -39,8 +49,7 @@ if __name__ == "__main__":
     debug = True
 
     if debug:
-        for i in range(randrange(100)):
-            clearScreen()
-            print("Round # ", i )
-            print(drawBox('H', randrange(70)))
-            print(drawBox('T', randrange(70)))
+        drawBox(5,5)
+        print()
+        drawBox(1,2)
+    print()
