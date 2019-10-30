@@ -31,4 +31,8 @@ letters = "sdakljfklsdjfklcjawejisdfjc"
 acending_letters = sorted(letters)
 acending_letters
 colors = ('red', 'blue', 'yello')
+<<<<<<< HEAD
 acendingcolors = sorted(colors)
+=======
+acendingcolors = sorted(colors)
+>>>>>>> master
