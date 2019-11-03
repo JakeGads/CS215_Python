@@ -27,9 +27,7 @@ def remove3(duplicate):
         if i == len(duplicate) - 1:
             return duplicate
 
-def remove4(duplicate):
-    one = duplicate
-    two
+
 
     
 if __name__ == "__main__":
