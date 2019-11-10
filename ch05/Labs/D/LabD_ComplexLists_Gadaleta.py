@@ -8,9 +8,11 @@ author Jake Gadaleta
 students = [("Karen", "Sophomore"), ("Pranshu", "Junior"), ("Ann", "Senior"),
                        ("Carl", "Freshmen"), ("Cait", "Freshmen"), ("Kathleen", "Sophomore")]
 
-upperClassmen = [student[0] # takes only the first part
+upperClassmen = [
+    student[0] # takes only the first part
     for student in students # checks every student
-    if student[1] != "Freshmen"] # returns the student if he/she is not a freshman
+    if student[1] != "Freshmen"
+    ] # returns the student if he/she is not a freshman
 
 print(upperClassmen) # display
 
@@ -29,9 +31,21 @@ print(
 print(
     sum([
         number * 3 
-        for number in range(1, 11) 
-        if number % 2 ==0 
+        for number in range(1, 11) if number % 2 ==0 
         ]))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 numbers = [10, 3, 7, 1, 9, 4, 2, 8, 5, 6]
 l = list(
