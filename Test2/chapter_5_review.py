@@ -60,7 +60,9 @@ def removeDuplicates(myList):
 
 
 values = [0, 0, -10, 15, 13, 12, 0, -10, 15, 13, 12, -10, 13, 12]
-
+b = []
+[b.append(item) for item in values if item not in b]
+print(b)
 """
 Insert 20 random letters into the range a-f into a list. Perform the following tasks, displaying your results.
 (a) Sort the list in ascending order
