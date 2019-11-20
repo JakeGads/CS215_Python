@@ -1,26 +1,27 @@
 def varMem():
     # how to find some memory
-    variable = "memory"
+    variable = 5
 
     memory = id(variable)
 
     # for the sake of my sanity this is called mem
-    print(id(variable)) # mem
+    print(id(variable))
 
     def memTranslator(var):
-        print(id(var), id(var) == memory) # mem
+    
+        print(id(var), id(var) == memory) # True
 
-        var = "editied memory"
+        var = 9
 
-        print(id(var), id(var) == memory) # not mem
+        print(id(var), id(var) == memory) # False 
 
     memTranslator(variable)
 
-    print(id (variable), id(variable) == memory) # mem
+    print(id (variable), id(variable) == memory) # True
 
-    variable = "new memory"
+    variable = 7
 
-    print(id(variable), id(variable) == memory)
+    print(id(variable), id(variable) == memory) # False
 
 def listMem():
     variable = []
@@ -64,6 +65,6 @@ def tupleMem():
 
 
 
-# varMem()
+varMem()
 # listMem()
 # tupleMem()
