@@ -22,3 +22,5 @@ for bar, frequency in zip(axes.patches, frequencies):
     text_y = bar.get_height()
     text = f'{frequency:,}\n{frequency/len(rolls):.3%}'
     axes.text(text_x, text_y, text, fontsize=11, ha='center', va='bottom')
+
+print("yort")
