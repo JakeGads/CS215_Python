@@ -1,3 +1,9 @@
+"""
+Lab5E_DiceSimulartions_JakeGadaleta.py
+Preforms various tests on dice data to answer questions as listed in teh Lab Doc
+author: Jake Gadaleta
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 import random
@@ -27,7 +33,7 @@ def create_bar_chart(results, title, x_title, y_title):
     plt.show()
 
 def test():
-    rolls = [random.randrange(1,7) for i in range(1_000_000)]
+    rolls = [random.randrange(1,7) for i in range(1_000)]
     title = f'Rolling a Six-Sided Die {len(rolls):,} times'
 
     create_bar_chart(rolls, title, 'Die Value', 'Frequency')
@@ -36,7 +42,7 @@ def test():
 def q1():
     rolls = []
 
-    for i in range(1_000_000):
+    for i in range(1_000):
         count = 0
         for h in range(5):
             if random.randint(1,6) == 1:
@@ -50,7 +56,7 @@ def q1():
 def q2():
     trails = []
 
-    for i in range(1_000_000):
+    for i in range(1_000):
         count = 0
         for h in range(25):
             if random.randint(1,6) == 1 and random.randint(1,6) == 1:
@@ -64,7 +70,7 @@ def q2():
 def q3():
     X = [i for i in range(4,11) if i != 7]
     results = []
-    for i in range(1_000_000):
+    for i in range(1_000):
         for x in X:
             while(True):
                 if random.randint(1,6) + random.randint(1,6) == 7:
