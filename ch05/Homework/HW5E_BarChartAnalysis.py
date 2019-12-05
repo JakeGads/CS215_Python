@@ -487,9 +487,10 @@ if __name__ == "__main__":
     schools0s = school
     schools = [student for student in school if student[20] > 0]
     grades =  [student[20] for student in school if student[20] > 0]
-
+    title = 'Grades for All Students (non-zero attendance)'
+    print(title)
     create_freq_barchart (results = grades, 
-                        title = 'Grades for All Students', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
@@ -502,18 +503,20 @@ if __name__ == "__main__":
     #Task 2:  GP vs MS
     gp_grades =  [student[20] for student in schools if student[0] == "GP"]
     ms_grades =  [student[20] for student in schools if student[0] != "GP"]
-
+    title =  'Grades for All GP Students'
+    print(title)
     create_freq_barchart (results = gp_grades, 
-                        title = 'Grades for All GP Students', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
                         categories = gradeCategories)
 
     descriptive_stats(gp_grades)
-
+    title = 'Grades for All MS Students'
+    print(title)
     create_freq_barchart (results = ms_grades, 
-                        title = 'Grades for All ms Students', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
@@ -527,22 +530,25 @@ if __name__ == "__main__":
     no_activity_grades =  [student[20] for student in schools if student[7] != "yes"]
 
     create_freq_barchart (results = activity_or_not, 
-                        title = 'Activity Dis', 
-                        x_title = "Grades", 
+                        title = 'Activity Split', 
+                        x_title = "Activity", 
                         y_title = "Frequency", 
                         )
-
+    
+    title = 'Grades for Students w/ Activities'
+    print(title)
     create_freq_barchart (results = activity_grades, 
-                        title = 'Grades for All Activity Students', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
                         categories = gradeCategories)
 
     descriptive_stats(activity_grades)
-
+    title = 'Grades for Students wo/ Activities'
+    print(title)
     create_freq_barchart (results = no_activity_grades, 
-                        title = 'Grades for All Activity Students', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
@@ -552,7 +558,7 @@ if __name__ == "__main__":
 
     #Task 4: Low Absence vs. High Abscense Scores - Appears to be a difference?
     absences = [student[17] for student in schools]
-
+    
     create_freq_barchart (results = absences, 
                         title = 'Attendence', 
                         x_title = "Num Abseences", 
@@ -563,8 +569,11 @@ if __name__ == "__main__":
     high_attendence_grades =  [student[20] for student in schools if student[17] < 15]
     low_attendence_grades =  [student[20] for student in schools if student[17] > 15]
 
+    title = 'Low Attendence Grades'
+    print(title)
+
     create_freq_barchart (results = low_attendence_grades, 
-                        title = 'Low Attendence Grades', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
@@ -573,12 +582,14 @@ if __name__ == "__main__":
     
     descriptive_stats(low_attendence_grades)
 
+    title = 'High Attendence Grades'
+    print(title)
     create_freq_barchart (results = high_attendence_grades, 
-                        title = 'High Attendence Grades', 
+                        title = title, 
                         x_title = "Grades", 
                         y_title = "Frequency", 
                         showFreqs = False,
                         categories = gradeCategories
                         )
     
-    descriptive_stats(low_attendence_grades)
+    descriptive_stats(high_attendence_grades)
