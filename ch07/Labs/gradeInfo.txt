@@ -1,0 +1,44 @@
+Exam 1 Grades
+count    21.000000
+mean     76.145125
+std      12.734784
+min      50.476190
+25%      65.238095
+50%      79.047619
+75%      86.666667
+max      95.238095
+Name: Exam1, dtype: float64
+
+Exam 2 Grades
+count    21.000000
+mean     81.638095
+std      12.558920
+min      60.000000
+25%      71.200000
+50%      84.000000
+75%      92.800000
+max      98.400000
+Name: Exam2, dtype: float64
+
+Exam 3 Grades
+count    21.000000
+mean     76.699507
+std      13.818757
+min      48.965517
+25%      66.896552
+50%      77.241379
+75%      89.655172
+max      97.931034
+Name: Exam3, dtype: float64
+
+Exam F Grades
+count    21.000000
+mean     72.084403
+std      11.243264
+min      55.089820
+25%      64.670659
+50%      69.461078
+75%      79.640719
+max      94.610778
+Name: FinalExam, dtype: float64
+
